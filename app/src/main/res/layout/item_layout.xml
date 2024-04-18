@@ -73,7 +73,7 @@
                     android:id="@+id/btnChat"
                     android:layout_width="25dp"
                     android:layout_height="18dp"
-                    android:layout_marginStart="140dp"
+                    android:layout_marginStart="120dp"
                     android:layout_marginEnd="4dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:scaleType="centerCrop"

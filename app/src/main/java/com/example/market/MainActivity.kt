@@ -8,9 +8,6 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.view.View
-import androidx.core.view.isVisible
-import android.animation.ObjectAnimator
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -94,11 +91,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         val intent = Intent(this, DetailActivity::class.java)
-        val pendingIntent =
-            PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        val pendingIntent = PendingIntent.getActivity(
+            this,
+            notificationId,
+            intent,
+            PendingIntent.FLAG_UPDATE_CURRENT
+        )
         val notification = NotificationCompat.Builder(this, channelId)
-            .setContentTitle("새로운 알림")
-            .setContentText("알림을 눌러서 이동하세요.")
+            .setContentTitle("새 알림이 있습니다.")
+            .setContentText("알림을 누르세요.")
             .setSmallIcon(R.drawable.notify)
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)
