@@ -7,9 +7,9 @@
     tools:context=".DetailActivity">
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         tools:ignore="MissingConstraints">
 
@@ -84,7 +84,7 @@
                 android:layout_height="38dp"
                 android:layout_marginLeft="25dp"
                 android:ellipsize="end"
-                android:maxLines="1"
+                android:maxLines="2"
                 android:text="샤넬 탑핸들 가방"
                 android:textSize="20sp"
                 android:textStyle="bold" />

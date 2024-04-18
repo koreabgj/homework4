@@ -14,7 +14,7 @@ class ItemAdapter(private val itemList: List<Item>, private val onClick: (Item) 
             binding.ivItem.setImageResource(item.imageResourceId)
             binding.tvItem.text = item.item
             binding.tvAddress.text = item.address
-            binding.tvPrice.text = item.price.toString()
+            binding.tvPrice.text = item.getFormattedPrice()
             binding.tvChatCount.text = item.chatCount.toString()
             binding.tvLikeCount.text = item.likeCount.toString()
 

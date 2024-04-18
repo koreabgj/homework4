@@ -17,6 +17,8 @@ class DetailActivity : AppCompatActivity() {
             finish()
         }
 
+        binding.scrollView
+
         val item: Item? = intent.getParcelableExtra("item")
         if (item != null) {
 
@@ -25,7 +27,7 @@ class DetailActivity : AppCompatActivity() {
             binding.tvAddress.text = item.address
             binding.tvItem.text = item.item
             binding.tvDescription.text = item.description
-            item.getFormattedPrice().also { binding.tvPrice.text = it }
+            binding.tvPrice.text = item.getFormattedPrice()
 
             binding.btnLike.setOnClickListener {
                 item.likeCount++
