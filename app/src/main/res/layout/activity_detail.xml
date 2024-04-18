@@ -14,6 +14,7 @@
         tools:ignore="MissingConstraints">
 
         <FrameLayout
+            android:id="@+id/FrameLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -34,84 +35,92 @@
 
         </FrameLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="8dp">
-
-            <ImageView
-                android:id="@+id/ivSeller"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentStart="true"
-                app:srcCompat="@drawable/seller" />
-
-            <TextView
-                android:id="@+id/tvSeller"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="3dp"
-                android:text="난쉽"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvAddress"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tvSeller"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="3dp"
-                android:text="동래구 온천 제2동"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginRight="4dp"
-            android:layout_marginBottom="10dp"
-            android:background="#808080" />
-
-        <TextView
-            android:id="@+id/tvItem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="23dp"
-            android:maxLines="1"
-            android:text="샤넬 탑핸들 가방"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
         <ScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginStart="15dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="15dp"
+            android:layout_marginEnd="10dp"
             app:layout_constraintBottom_toTopOf="@id/btnLike"
-            app:layout_constraintTop_toBottomOf="@id/linearLayout">
+            app:layout_constraintTop_toBottomOf="@id/FrameLayout">
 
-            <TextView
-                android:id="@+id/tvDescription"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="1dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="1dp"
-                android:text="샤넬 트랜디 CC 탑핸들 스몰 램스킨 블랙 금장 플랩백!\n\n색상 : 블랙\n사이즈 : 25.5cm * 17.5cm * 8cm\n구성 : 본품, 더스트\n\n급하게 돈이 필요해서 팝니다 ㅠㅠ,,"
-                android:textSize="18sp" />
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/ivSeller"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentStart="true"
+                        app:srcCompat="@drawable/seller" />
+
+                    <TextView
+                        android:id="@+id/tvSeller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="3dp"
+                        android:text="난쉽"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvSeller"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="3dp"
+                        android:text="동래구 온천 제2동"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#808080" />
+
+
+                <TextView
+                    android:id="@+id/tvItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginEnd="23dp"
+                    android:maxLines="1"
+                    android:text="샤넬 탑핸들 가방"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="5dp"
+                    android:text="샤넬 트랜디 CC 탑핸들 스몰 램스킨 블랙 금장 플랩백!\n\n색상 : 블랙\n사이즈 : 25.5cm * 17.5cm * 8cm\n구성 : 본품, 더스트\n\n급하게 돈이 필요해서 팝니다 ㅠㅠ,,"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
 
         </ScrollView>
 
@@ -125,8 +134,8 @@
         android:layout_marginTop="45dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/like"
-        android:scaleType="centerCrop"
         android:contentDescription="좋아요"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="HardcodedText" />
@@ -162,11 +171,11 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@android:color/holo_orange_dark"
+        android:contentDescription="채팅"
         android:text="채팅하기"
         android:textColor="#ffffff"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:contentDescription="채팅"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="HardcodedText" />
