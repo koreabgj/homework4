@@ -8,7 +8,7 @@
     android:gravity="start"
     android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="11dp"
@@ -62,18 +62,19 @@
                 android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_width="240dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="1dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="4dp"
+                android:layout_marginEnd="20dp"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:id="@+id/btnChat"
                     android:layout_width="25dp"
                     android:layout_height="18dp"
-                    android:layout_marginStart="150dp"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginEnd="4dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:scaleType="centerCrop"
                     android:src="@drawable/chat" />
@@ -83,20 +84,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:paddingStart="4dp"
-                    android:paddingEnd="4dp"
                     android:text="0"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
                 <Space
-                    android:layout_width="4dp"
+                    android:layout_width="8dp"
                     android:layout_height="wrap_content" />
 
                 <ImageButton
                     android:id="@+id/btnLike"
                     android:layout_width="20dp"
                     android:layout_height="18dp"
+                    android:layout_marginEnd="4dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:scaleType="centerCrop"
                     android:src="@drawable/like" />
@@ -105,9 +105,8 @@
                     android:id="@+id/tvLikeCount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
                     android:gravity="center_vertical"
-                    android:paddingStart="4dp"
-                    android:paddingEnd="4dp"
                     android:text="0"
                     android:textColor="@color/black"
                     android:textSize="16sp" />

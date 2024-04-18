@@ -36,8 +36,7 @@
         android:id="@+id/ivNotify"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="180dp"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSelect"
@@ -49,13 +48,10 @@
         android:layout_width="match_parent"
         android:layout_height="660dp"
         android:layout_gravity="center"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintTop_toBottomOf="@+id/btnSelect"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-145dp"
+        tools:layout_editor_absoluteX="1dp"
         tools:listitem="@layout/item_layout" />
 
     <ImageView
