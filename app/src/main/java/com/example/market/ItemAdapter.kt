@@ -10,11 +10,13 @@ class ItemAdapter(private val itemList: List<Item>, private val onClick: (Item) 
     inner class ViewHolder(private val binding: ItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(item: Item) {
+
+            binding.ivItem.setImageResource(item.imageResourceId)
             binding.tvItem.text = item.item
             binding.tvAddress.text = item.address
             binding.tvPrice.text = item.price.toString()
-            binding.tvChatCount.text
-            binding.tvLikeCount.text
+            binding.tvChatCount.text = item.chatCount.toString()
+            binding.tvLikeCount.text = item.likeCount.toString()
 
             itemView.setOnClickListener {
                 val position = adapterPosition

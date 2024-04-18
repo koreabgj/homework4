@@ -11,7 +11,7 @@
         android:layout_width="67dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:text="내배캠동"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -19,28 +19,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/btnSelect"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="110dp"
-        android:onClick="onBtnSelectClick"
-        android:scaleType="centerCrop"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="170dp"
         android:src="@drawable/select"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivNotify"
-        app:layout_constraintEnd_toStartOf="@+id/ivNotify"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/ivNotify" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/ivNotify"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/btnSelect"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/notify" />
 
@@ -54,13 +53,12 @@
         tools:layout_editor_absoluteX="-145dp"
         tools:listitem="@layout/item_layout" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/btnFloating"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:scaleType="centerCrop"
         android:src="@drawable/floating"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

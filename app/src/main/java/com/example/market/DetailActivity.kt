@@ -21,12 +21,11 @@ class DetailActivity : AppCompatActivity() {
         if (item != null) {
 
             binding.ivItem.setImageResource(item.imageResourceId)
-
             binding.tvSeller.text = item.seller
             binding.tvAddress.text = item.address
             binding.tvItem.text = item.item
             binding.tvDescription.text = item.description
-            binding.tvPrice.text = item.getFormattedPrice()
+            item.getFormattedPrice().also { binding.tvPrice.text = it }
 
             binding.btnLike.setOnClickListener {
                 item.likeCount++
