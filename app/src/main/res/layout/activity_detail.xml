@@ -25,7 +25,7 @@
                 <ImageView
                     android:id="@+id/ivItem"
                     android:layout_width="match_parent"
-                    android:layout_height="256dp"
+                    android:layout_height="300dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/sample8" />
 
@@ -78,13 +78,22 @@
 
             </RelativeLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#808080" />
+
             <TextView
                 android:id="@+id/tvItem"
                 android:layout_width="316dp"
                 android:layout_height="38dp"
                 android:layout_marginLeft="25dp"
                 android:ellipsize="end"
-                android:maxLines="2"
+                android:maxLines="1"
                 android:text="샤넬 탑핸들 가방"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -106,7 +115,7 @@
         android:layout_width="28dp"
         android:layout_height="32dp"
         android:layout_marginStart="36dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/like"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,7 +139,7 @@
         android:layout_width="105dp"
         android:layout_height="45dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:text="채팅하기"
         android:textColor="#ffffff"
