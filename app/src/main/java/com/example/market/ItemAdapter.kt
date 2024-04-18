@@ -5,7 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.market.databinding.ItemLayoutBinding
 
-class ItemAdapter(private val itemList: List<Item>, private val onClick: (Item) -> Unit) : RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
+class ItemAdapter(private val itemList: List<Item>, private val onClick: (Item) -> Unit) :
+    RecyclerView.Adapter<ItemAdapter.ViewHolder>() {
 
     inner class ViewHolder(private val binding: ItemLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
