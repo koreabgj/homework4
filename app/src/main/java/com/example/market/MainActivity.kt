@@ -34,6 +34,10 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.adapter = adapter
 
+        binding.btnEnd.setOnClickListener {
+            showExitDialog()
+        }
+
         binding.btnSelect.setOnClickListener {
             recyclerView.smoothScrollToPosition(adapter.itemCount - 1)
         }

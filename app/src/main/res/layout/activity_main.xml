@@ -7,10 +7,22 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/btnEnd"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSelect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/ivNotify"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginStart="190dp"
+        android:layout_marginStart="200dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/notify"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
