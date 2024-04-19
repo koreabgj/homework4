@@ -99,7 +99,6 @@
                     android:layout_marginBottom="15dp"
                     android:background="#808080" />
 
-
                 <TextView
                     android:id="@+id/tvItem"
                     android:layout_width="match_parent"
