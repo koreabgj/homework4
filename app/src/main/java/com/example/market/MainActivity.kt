@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var notificationManager: NotificationManager
     private val channelName = "My Channel One"
     private val channelId = "one-channel"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -59,9 +60,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setButtonClickListeners() {
-        binding.btnEnd.setOnClickListener {
-            showExitDialog()
-        }
 
         binding.btnSelect.setOnClickListener {
             binding.recyclerView.smoothScrollToPosition(binding.recyclerView.adapter!!.itemCount - 1)
@@ -73,6 +71,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.ivNotify.setOnClickListener {
             showNotification()
+        }
+
+        binding.btnEnd.setOnClickListener {
+            showExitDialog()
         }
     }
 

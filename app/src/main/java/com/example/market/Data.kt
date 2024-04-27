@@ -99,5 +99,5 @@ val itemList = listOf(
         price = 190000,
         likeCount = 40,
         chatCount = 6
-    ),
+    )
 )

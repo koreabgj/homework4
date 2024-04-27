@@ -24,10 +24,12 @@ class DetailActivity : AppCompatActivity() {
         setButtonClickListeners()
         setViewWithItem()
     }
+
     private fun setButtonClickListeners(){
         binding.btnBack.setOnClickListener {
             finish()
         }
+
         binding.btnLike.setOnClickListener {
             item?.let{
                 it.likeCount++
@@ -40,6 +42,7 @@ class DetailActivity : AppCompatActivity() {
             }
         }
     }
+
     private fun setViewWithItem(){
         item?.let{
             binding.ivItem.setImageResource(it.imageResourceId)
